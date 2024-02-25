@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <script src="quiz.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <div id="c1" class="container">
+        <h1 class="quiz">QUIZ GAME</h1>
+        <div class="ques" id="question">This is a question</div>
+        <div class="q" id="opt1" onclick="check(event)">Option 1</div>
+        <div class="q" id="opt2" onclick="check(event)">Option 2</div>
+        <div class="q" id="opt3" onclick="check(event)"></div>
+        <div class="q" id="opt4" onclick="check(event)">Option 4</div>
+</div>
+
+<div id="c2" class="container2">
+    <h1 class="quiz">QUIZ GAME</h1>
+
+<form onsubmit="submitForm(event)">
+<label >Name :</label>
+<input class="name" type="text" required>
+<label>Number of Question :</label>
+<select class="category">
+    <option value="21">Sports</option>
+    <option value="20">Mythology</option>
+    <option value="26">Celebrities</option>
+    <option value="27">Animals</option>
+</select>
+
+<label>Select Difficulty : </label>
+<select class="difficulty">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+</select>
+<input type ="submit" class="start_quiz" value="Start Quiz" name="Start Quiz">
+</form>
+
+</div>
+<div  id="c3" class="container3">
+    <h1 class="quiz">QUIZ GAME</h1>
+    <h1 id="sc">YOUR SCORE OUT OF 10</h1>
+    <i><h2 style ="color:rgb(20, 17, 17);font-size: 50px;" id="score"></h2></i>
+    <button  onclick="restart()" style="background-color: aqua;padding: 10px;">Restart</button>
+</div>
+
+
+</body>
+</html>
